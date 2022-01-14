@@ -28,10 +28,14 @@ public class ProductService {
         return pr.getProductType(typeName);
     }
     
+    public List<ProductType> findAllProductTypes(){
+    	return pr.findAllProductTypes();
+    }
+    
 
 
     public Product save(Product p){
-        return null;       
+        return pr.save(p);       
     }
 
     
